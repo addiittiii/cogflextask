@@ -120,7 +120,7 @@ restoreCursor = onCleanup(@() ShowCursor);
 %Res = Screen('Resolution',0);
 screens = Screen('Screens');
 screenNumber = screens(1);
-Res = Screen('Resolution', screenNumber, 1280, 720, 60);
+% Res = Screen('Resolution', screenNumber, 1920, 1080, 60);
 window = Screen('OpenWindow',screenNumber,[0 0 0]); 
 Screen('TextSize', window,max(24, Res.width/80));
 
